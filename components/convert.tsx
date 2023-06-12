@@ -1,14 +1,26 @@
-import { convert } from '@americanexpress/css-to-js'; 
+import { useState } from 'react';
+import { convert } from '@americanexpress/css-to-js';
 
 const Convert = () => {
+    const [userProvidedText, setUserProvidedText] = useState('');
 
-    const handleClick = () => {
-        const output = convert(`.myClass { color: 'red' }`);
-        console.log(output);
+    const handleChange = e => {
+        setUserProvidedText(e.target.value);
+    };
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const output = convert(userProvidedText);
+        console.log('p', output);
     };
 
     return (
-        <button onClick={handleClick}>Convert</button>
+        <>
+            <form onSubmit={handleSubmit}>
+                <textarea onChange={handleChange} value={userProvidedText}></textarea>
+                <button>Convert</button>
+            </form>
+        </>
     );
 };
 
