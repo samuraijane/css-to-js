@@ -1,0 +1,39 @@
+Compiled with problems:
+×
+ERROR in ./node_modules/@americanexpress/css-to-js/lib/esm/index.js 1:0-24
+Module not found: Error: Can't resolve 'path' in '/Users/e5691595/Documents/md/apps/css-to-js/node_modules/@americanexpress/css-to-js/lib/esm'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ERROR in ./node_modules/@americanexpress/css-to-js/lib/esm/index.js 2:0-20
+Module not found: Error: Can't resolve 'fs' in '/Users/e5691595/Documents/md/apps/css-to-js/node_modules/@americanexpress/css-to-js/lib/esm'
+ERROR in ./node_modules/css/lib/stringify/source-map-support.js 10:9-22
+Module not found: Error: Can't resolve 'fs' in '/Users/e5691595/Documents/md/apps/css-to-js/node_modules/css/lib/stringify'
+ERROR in ./node_modules/css/lib/stringify/source-map-support.js 11:11-26
+Module not found: Error: Can't resolve 'path' in '/Users/e5691595/Documents/md/apps/css-to-js/node_modules/css/lib/stringify'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ERROR in ./node_modules/urix/index.js 4:11-26
+Module not found: Error: Can't resolve 'path' in '/Users/e5691595/Documents/md/apps/css-to-js/node_modules/urix'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
