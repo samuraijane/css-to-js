@@ -36,6 +36,7 @@
     "@americanexpress/css-to-js": "^1.0.1",
     "path-browserify": "^1.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "stringify-object": "^5.0.0"
   }
 }
