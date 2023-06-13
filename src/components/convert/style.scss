@@ -1,9 +1,9 @@
 .conversion-form {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 
     .conversion-form__form {
-        margin: 20px 0;
         width: 50%;
 
         button {
@@ -19,7 +19,20 @@
 
         textarea {
             height: 500px;
+            padding: 20px;
             width: 100%;
+        }
+    }
+
+    .conversion-form__output {
+        flex: 1;
+        margin: 0 0 0 30px;
+        
+        div {
+            background-color: aliceblue;
+            height: 500px;
+            overflow-y: scroll;
+            padding: 20px;
         }
     }
 }
